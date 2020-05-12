@@ -7,4 +7,10 @@ pipeline {
             }
         }
     }
+    
+    def terrapath(){
+          def tfHome = tool name: 'myterraform', type: 'terraform'
+          return tfHome
+    }    
 }
+
