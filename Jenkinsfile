@@ -4,7 +4,7 @@ pipeline{
     stages{
       stage('initializing teraform'){
         steps{
-           echo "hellow aj"
+          bat "echo "hellow aj""
         }
       }
     }
