@@ -1,12 +1,10 @@
-pipeline{
-    agents any
-   
+pipeline {
+    agent any
     stages{
-      stage('initializing teraform'){
-        steps{
-          bat "echo "hellow aj""
+        stage('Build'){
+            steps {
+                bat 'echo hello'
+            }
         }
-      }
     }
-
 }
