@@ -4,7 +4,7 @@ pipeline{
     stages{
       stage('initializing teraform'){
         steps{
-           sh"terraform init"
+           echo "hellow aj"
         }
       }
     }
