@@ -8,7 +8,7 @@ pipeline {
         }
     }
     
-    def terrapath(){
+    def getTerraformPath(){
           def tfHome = tool name: 'myterraform', type: 'terraform'
           return tfHome
     }    
