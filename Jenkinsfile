@@ -1,16 +1,14 @@
 pipeline {
     agent any
+    tools {
+        terraform 'myterraform'
+    }
     stages{
         stage('Build'){
             steps {
                 bat 'terraform init'
             }
         }
-    }
-    
-    def getTerraformPath(){
-          def tfHome = tool name: 'myterraform', type: 'terraform'
-          return tfHome
-    }    
+    }   
 }
 
